@@ -17,6 +17,8 @@ setup(
     description='Sends an SNS message to an AWS SNS topic defined by en env var',
     author='Naimuri',
     packages=find_packages(),
-    install_requires=['boto3'] + naimuri_dependencies.values(),
+    install_requires=['nose',
+                      'coverage',
+                      'boto3'] + naimuri_dependencies.values(),
     dependency_links=naimuri_dependency_links
 )

@@ -4,5 +4,5 @@ A very very basic tool that will send an SNS message to an AWS SNS topic defined
 
 ## Environment Variables
 
-- ENV_VAR_SNS_TOPIC
-- ENV_VAR_SNS_MESSAGE
+- SNS_TOPIC
+- SNS_MESSAGE
