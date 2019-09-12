@@ -1,13 +1,13 @@
 import boto3
 import logging
+import os
 import python_sns.config as config
 
 Logger = logging.getLogger(config.TOOLNAME)
 
 
 def test_sns_message(configuration):
-    session = boto3.Session(profile_name="naimuriplayground")
-    client = session.client('sns', region_name='eu-west-1')
+    client = boto3.client('sns', region_name=os.environ.get("AWS_REGION"))
     try:
         client.publish(TopicArn=get_sns_alert_topic(configuration),
         Message=get_sns_alert_message(configuration)
