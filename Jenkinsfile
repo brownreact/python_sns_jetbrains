@@ -1,6 +1,3 @@
-
-#!groovy
-
 def slackChannel = "#data-science"
 
 properties([
