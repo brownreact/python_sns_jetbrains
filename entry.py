@@ -1,7 +1,6 @@
 import python_sns.config as config
 import python_sns.core as core
 from cyrm_python_tools_framework.framework import post_parse_log, run_id
-import sys
 import logging
 
 # Constructs the logger
